@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Card Product</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li onmouseover="changeImageSrc('./assets/shoes1.png')"><img src="./assets/shoes1.png" alt="tenis1"></li>
+            <li onmouseover="changeImageSrc('./assets/shoes2.png')"><img src="./assets/shoes2.png" alt="tenis2"></li>
+            <li onmouseover="changeImageSrc('./assets/shoes3.png')"><img src="./assets/shoes3.png" alt="tenis3"></li>
+
+            <!-- <li onclick="changeImageSrc('./assets/shoes1.png')"><img src="./assets/shoes1.png" alt="tenis1"></li>
+            <li onclick="changeImageSrc('./assets/shoes2.png')"><img src="./assets/shoes2.png" alt="tenis2"></li>
+            <li onclick="changeImageSrc('./assets/shoes3.png')"><img src="./assets/shoes3.png" alt="tenis3"></li> -->
+        </ul>
+        <div class="imgBox">
+            <h2>Nike Air Zoom</h2>
+            <img src="./assets/shoes1.png" class="tenisss" alt="tenis1">
+            <ul class="size">
+                <span>Tamanho</span>
+                    <li>40</li>
+                    <li>41</li>
+                    <li>42</li>
+                    <li>43</li>
+            </ul>
+            <a href="#" class="btn">Adc ao Carrinho</a>
+        </div>
+    </div>
+
+    <script>
+        function changeImageSrc(anything){
+            document.querySelector('.tenisss').src = anything;
+        }
+    </script>
+</body>
+</html>
